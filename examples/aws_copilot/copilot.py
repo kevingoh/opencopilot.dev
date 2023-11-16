@@ -7,7 +7,7 @@ copilot = OpenCopilot(
     copilot_name="AWS CLI Copilot",
     llm="gpt-3.5-turbo-16k", # You can also use gpt-4 for improved accuracy
     prompt_file="prompt_template.txt",
-    openai_api_key="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",
+    openai_api_key="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",
     embedding_model=embeddings,
 
 )

@@ -18,6 +18,7 @@ def execute(user_id: str = None, streaming: bool = False) -> BaseChatModel:
             streaming=streaming,
             #model_kwargs={"headers": _get_headers(user_id)},
             openai_api_key=settings.get().OPENAI_API_KEY,
+            openai_api_base="http://127.0.0.1:1337/v1"
         )
     if hasattr(llm, "streaming"):
         llm.streaming = streaming

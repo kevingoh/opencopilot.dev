@@ -16,7 +16,7 @@ def execute(user_id: str = None, streaming: bool = False) -> BaseChatModel:
             temperature=0.0,
             model_name=settings.get().LLM,
             streaming=streaming,
-            model_kwargs={"headers": _get_headers(user_id)},
+            #model_kwargs={"headers": _get_headers(user_id)},
             openai_api_key=settings.get().OPENAI_API_KEY,
         )
     if hasattr(llm, "streaming"):

@@ -107,7 +107,7 @@ class Settings:
     QUESTION_TEMPLATE: Optional[str] = None
     RESPONSE_TEMPLATE: Optional[str] = None
 
-    HELICONE_BASE_URL = "https://oai.hconeai.com/v1"
+    HELICONE_BASE_URL = "http://127.0.0.1:1337/v1" #"https://oai.hconeai.com/v1"
 
     FRONTEND_CONF: FrontendConf = FrontendConf.default()
 

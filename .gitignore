@@ -40,3 +40,4 @@ opencopilot_ai.egg-info
 examples/*/logs
 
 node_modules
+examples/**/*.pkl

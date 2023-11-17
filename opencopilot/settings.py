@@ -80,6 +80,7 @@ class Settings:
     EMBEDDING_MODEL: Union[str, Embeddings]
 
     OPENAI_API_KEY: Optional[str] = None
+    OPENAI_API_BASE: Optional[str] = None
 
     AUTH_TYPE: Optional[str] = None
     API_KEY: Optional[str] = None

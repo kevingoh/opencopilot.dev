@@ -70,6 +70,7 @@ class OpenCopilot:
         ui_theme: Optional[Literal["light", "dark"]] = "light",
         is_debug_enabled: Optional[bool] = True,
         copilot_icon: Optional[str] = None,
+        openai_api_base: Optional[str] = None,
     ):
         api_logger.set_log_level(log_level)
 
@@ -109,6 +110,7 @@ class OpenCopilot:
                 QUESTION_TEMPLATE=question_template,
                 RESPONSE_TEMPLATE=response_template,
                 OPENAI_API_KEY=openai_api_key,
+                OPENAI_API_BASE=openai_api_base,
                 COPILOT_NAME=copilot_name,
                 HOST=host,
                 API_PORT=api_port,
